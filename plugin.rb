@@ -18,7 +18,7 @@ module Onebox
       def to_html
         match = @url.match(/\/(id|profiles)\/([^\/]+)/)
         steamid = match[2]
-        "<div class='steamprofile'><a href='#{@url}' target='_blank'><img src='http://steamsignature.com/status/spanish/#{steamid}.png' alt='' title='#{steamid}' /></a><a href='steam://friends/add/#{steamid}'><img class='addfriend' src='http://steamsignature.com/AddFriend.png'></a></div>"
+        "<a class='steamprofile' href='#{@url}' target='_blank'><img src='http://steamsignature.com/status/spanish/#{steamid}.png' alt='' title='#{steamid}' /></a><a href='steam://friends/add/#{steamid}'><img class='steamprofileadd' src='http://steamsignature.com/AddFriend.png'></a>"
       rescue
         @url
       end
