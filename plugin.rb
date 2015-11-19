@@ -15,8 +15,8 @@ module Onebox
       matches_regexp(/^(https?:\/\/)(steamcommunity.com\/id\/)([^\/]+)\/?$/)
 
       def to_html
-        match = @url.match(/^(https?:\/\/)(steamcommunity.com\/id\/)([^\/]+)\/?$/)
-        steamid = match[3]
+        match = @url.match(/\/id\/([^\/]+)/)
+        steamid = match[1]
         "<img src='http://steamsignature.com/status/#{steamid}.png' alt='' title='#{steamid}' /><a href='steam://friends/add/#{steamid}'><img src='http://steamsignature.com/AddFriend.png'></a>"
       rescue
         @url
