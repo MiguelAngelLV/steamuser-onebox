@@ -1,0 +1,7 @@
+.steamprofile span{
+  display: none;
+}
+
+.steamprofile .addfriend {
+  margin-left: -4px;
+}

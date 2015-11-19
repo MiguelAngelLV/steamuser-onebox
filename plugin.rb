@@ -4,6 +4,8 @@
 # authors: miguelangellv
 # url: https://github.com/MiguelAngelLV/steamuser-onebox.git
 
+register_asset "assets/style.css"
+
 Onebox = Onebox
 
 module Onebox
@@ -16,7 +18,7 @@ module Onebox
       def to_html
         match = @url.match(/\/(id|profiles)\/([^\/]+)/)
         steamid = match[2]
-        "<a href='#{@url}' target='_blank'><img src='http://steamsignature.com/status/spanish/#{steamid}.png' alt='' title='#{steamid}' /></a><a href='steam://friends/add/#{steamid}'><img style='margin-left: -4px;' src='http://steamsignature.com/AddFriend.png'></a>"
+        "<div class='steamprofile'><a href='#{@url}' target='_blank'><img src='http://steamsignature.com/status/spanish/#{steamid}.png' alt='' title='#{steamid}' /></a><a href='steam://friends/add/#{steamid}'><img class='addfriend' src='http://steamsignature.com/AddFriend.png'></a></div>"
       rescue
         @url
       end
