@@ -2,7 +2,6 @@
 # about: Simple User Profile display box for Discourse
 # version: 0.1
 # authors: miguelangellv
-# based in Steam Steam Store Widget:  https://github.com/fearlessfrog/steamstorewidget-onebox
 # url: https://github.com/MiguelAngelLV/steamuser-onebox.git
 
 Onebox = Onebox
