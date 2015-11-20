@@ -4,6 +4,8 @@
 # authors: miguelangellv
 # url: https://github.com/MiguelAngelLV/steamuser-onebox.git
 
+register_asset "style.css"
+
 Onebox = Onebox
 
 module Onebox
