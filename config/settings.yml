@@ -1,0 +1,4 @@
+plugins:
+  steamuser_language:
+    default: "english"
+    client: true
