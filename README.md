@@ -1,5 +1,6 @@
-Simple User display a Discourse plugin
+A simple Steam Profile Signature plugin for plugin
 
+This plugins transform profile URL to Steam Signature using http://steamsignature.com/
 
 Based in the Simple Steam Store Widget as a Discourse plugin of fearlessfrog
 https://github.com/fearlessfrog/steamstorewidget-onebox
@@ -20,6 +21,9 @@ hooks:
           - git clone https://github.com/discourse/docker_manager.git
           - git clone https://github.com/MiguelAngelLV/steamuser-onebox.git
 ```
+
+You can select the language in plugins settings. You can see the available languages in http://steamsignature.com/
+
 * Rebuild the container
 
 ```
